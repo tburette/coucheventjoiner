@@ -295,9 +295,9 @@ def main():
         if not 'session' in vars():
             session = login(values['username'], values['password'])        
     except RequestException, e:
-        print "Network error when attempting to login. " + e.message
+        print "Network error when attempting to login. {0}".format(e.message)
     except LoginException, e:
-        print "Couldn't login. " + e.message
+        print "Couldn't login. {0}".format(e.message)
     else:
         loop_to_join_event(session,
                            values['event'],
