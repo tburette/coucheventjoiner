@@ -1,14 +1,6 @@
--login
--request page
--get
-	event over
-	spot remaining
--attempt to join
--loop
-
-
-sitesource/show.js
-    see joinEventAction for login logic
-
-
-!login with facebook
+-doc
+    no login with facebook
+-setup
+-README doc
+-complete unit tests
+-pylint check
