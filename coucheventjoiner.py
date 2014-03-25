@@ -1,3 +1,4 @@
+__version__ = '0.1'
 from enum import Enum
 import sys
 import os
@@ -9,6 +10,7 @@ import getpass
 import requests
 from requests.exceptions import RequestException
 import lxml.html
+
 
 COUCHSURFING_NETLOC = 'www.couchsurfing.org'
 COUCHSURFING_EVENT_BASE_PATH = '/n/events/'
@@ -53,7 +55,8 @@ def parse_args():
                         '--delay', 
                         type=int, 
                         default=DEFAULT_RETRY_DELAY,
-                        help='Delay before retrying (in seconds)')
+                        help='Delay before retrying if event is full'
+                             '(in seconds)')
     parser.add_argument('event', 
                         type=str, 
                         help='Event URL')
