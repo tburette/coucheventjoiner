@@ -20,7 +20,11 @@ setup(name='coucheventjoiner',
       url='https://github.com/tburette/coucheventjoiner',
       description='Join couchsurfing events that are full',
       long_description=open('README.md', 'r').read(),
-      packages=['coucheventjoiner'],
+      packages = find_packages(),
+      py_modules=['coucheventjoiner'],
+      package_data = {
+          'tests': ['*.html']
+      },
       install_requires=['enum34>=0.9.23',
                       'lxml>=3.3.3',
                       'requests>=2.2.1',
