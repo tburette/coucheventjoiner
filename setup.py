@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import coucheventjoiner
 
 # http://stackoverflow.com/a/7071358/735926
 import re
@@ -14,7 +13,7 @@ else:
 
 
 setup(name='coucheventjoiner',
-      version=coucheventjoiner.__version__,
+      version=verstr,
       author='Thomas Burette',
       license='MIT',
       url='https://github.com/tburette/coucheventjoiner',
