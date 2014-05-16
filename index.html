@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Coucheventjoiner : Join couchsurfing events that are full" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Coucheventjoiner</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tburette/coucheventjoiner">View on GitHub</a>
+
+          <h1 id="project_title">Coucheventjoiner</h1>
+          <h2 id="project_tagline">Join couchsurfing events that are full</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/tburette/coucheventjoiner/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/tburette/coucheventjoiner/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="coucheventjoiner" class="anchor" href="#coucheventjoiner"><span class="octicon octicon-link"></span></a>coucheventjoiner</h1>
+
+<p><em>coucheventjoiner</em> is a command line tool to join couchsurfing event. If the event is full it will retry periodically until a spot is free and the event is joined.</p>
+
+<h1>
+<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h1>
+
+<h1>
+<a name="use" class="anchor" href="#use"><span class="octicon octicon-link"></span></a>Use</h1>
+
+<pre><code>coucheventjoiner.py [-h] [-d DELAY] event username [password]
+
+positional arguments:
+  event                 Event URL
+  username              Couchsurfing username
+  password              Couchsurfing password. Optional. If password missing the application will ask for it.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DELAY, --delay DELAY
+                        Delay before retrying if event is full(in seconds)
+</code></pre>
+
+<h1>
+<a name="tests" class="anchor" href="#tests"><span class="octicon octicon-link"></span></a>Tests</h1>
+
+<pre><code>python tests.py
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Coucheventjoiner maintained by <a href="https://github.com/tburette">tburette</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
